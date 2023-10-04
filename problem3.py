@@ -30,3 +30,15 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+num1 = int(input("Enter the first integer: "))
+num2 = int(input("Enter the second integer: "))
+num3 = int(input("Enter the third integer: "))
+
+smallest = min(num1, num2, num3)
+largest = max(num1, num2, num3)
+middle = num1 + num2 + num3 - smallest - largest
+
+if smallest**2 + middle**2 == largest**2:
+    print(f"{num1},{num2},{num3} form a Pythagorean triple.")
+else:
+    print(f"{num1},{num2},{num3} do not form a Pythagorean triple.")

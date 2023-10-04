@@ -32,3 +32,4 @@ Enter the distance from the sun in AU: 2
 That is not within normal Earth or Mars orbit.
 
 """
+input(float())

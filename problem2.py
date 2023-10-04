@@ -26,3 +26,15 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+def is_factor(smaller, larger):
+    max_num = max(smaller, larger)
+    
+    if max_num % smaller == 0:
+        return f"{smaller} is a factor of {larger}."
+    else:
+        return f"{smaller} is not a factor of {larger}."
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+result = is_factor(num2, num1)
+print(result)

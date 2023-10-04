@@ -25,4 +25,15 @@ Enter a number: 36
 Enter a number: 16
 16 is not frue
 """
+def is_frue(number):
+    if number % 6 == 0 and number % 8 != 0:
+        return True
+    else:
+        return False
+
+numb = int(input("Enter a number: "))
+if is_frue(numb):
+    print(f"{numb} is frue")
+else:
+    print(f"{numb} is not frue")
 

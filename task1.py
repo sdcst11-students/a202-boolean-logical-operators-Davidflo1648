@@ -32,4 +32,21 @@ Enter the distance from the sun in AU: 2
 That is not within normal Earth or Mars orbit.
 
 """
-input(float())
+def check_orbit(number):
+    # Orbital distances (AU)
+    earth_min = 0.9759
+    earth_max = 1.016
+    mars_min = 1.524
+    mars_max = 1.666
+    
+    if earth_min <= number <= earth_max:
+        return "The number falls within Earth's orbit."
+    elif mars_min <= number <= mars_max:
+        return "The number falls within Mars' orbit."
+    else:
+        return "The number is outside both Earth's and Mars' orbits."
+
+# Example usage:
+user_input = float(input("Enter a number (AU): "))
+result = check_orbit(user_input)
+print(result)

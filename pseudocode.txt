@@ -1,0 +1,21 @@
+#!python3
+
+if time == 7.5 and day==Weekday and day != "Wednesday":
+    wakeUp()
+
+and operator makes all of the conditions need to be true
+
+if day == schoolday or earlyHockeyPractice == True:
+    wakeUp()
+
+
+if hungry == True and money > 9:
+    buy("Bic Mac Meal")
+
+
+if time == 7.5 and (day==schoolday or earlyHockeyPractice == True):
+    wakeUp()
+
+if time == 7.5:
+    if day == schoolday or earlyHockeyPractice == True:
+        wakeUp()

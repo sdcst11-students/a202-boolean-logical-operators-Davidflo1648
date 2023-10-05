@@ -33,7 +33,7 @@ That is not within normal Earth or Mars orbit.
 
 """
 def check_orbit(number):
-    # Orbital distances (AU)
+
     earth_min = 0.9759
     earth_max = 1.016
     mars_min = 1.524
@@ -46,7 +46,6 @@ def check_orbit(number):
     else:
         return "The number is outside both Earth's and Mars' orbits."
 
-# Example usage:
 user_input = float(input("Enter a number (AU): "))
 result = check_orbit(user_input)
 print(result)
